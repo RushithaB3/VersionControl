@@ -1,0 +1,21 @@
+
+git init (Initialize new repository in the Directory)
+
+git status (To see the status of the file)
+
+To add file for tracking
+
+git add <file name>
+
+git add . (adds all changes in current directory only)
+
+git add -A or git add --all (adds all changes in the entire repo, even if you’re outside the working directory)
+
+git add * (adds all changes in current directory but ignores hidden files)
+
+git commit -m “message” (takes all the changes that have been staged and creates new commit in the git history)
+
+git log (To see the history of commits done)
+
+git diff <file> (Shows what has changed in your files before you run git add.)
+
