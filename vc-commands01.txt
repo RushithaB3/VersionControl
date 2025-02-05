@@ -19,3 +19,4 @@ git log (To see the history of commits done)
 
 git diff <file> (Shows what has changed in your files before you run git add.)
 
+touch <file> (creates new file with given name)
