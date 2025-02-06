@@ -45,9 +45,49 @@ git clone (used to download (clone) a repository from GitHub to your local machi
 
 git clone <repository_url> (This creates a local copy of the repository so you can work on it.
        In real time it will ask credentials during cloning)
+________________________________________________________________________________________________________
 
 Staging and commiting changes:
 git status : Check the status of the files
 git add .
 git commit -m “message”
 git push
+________________________________________________________________________________________________________
+
+First connect local repository to github repository
+
+push an existing repository from the command line
+git remote add origin git@github.com:RushithaB3/VersionControl.git
+git branch -M main
+git push -u origin main
+
+
+Then add ssh key by following these steps
+Check for Existing SSH Key
+First, check if you already have an SSH key by running:
+sh
+CopyEdit
+ls -al ~/.ssh
+
+Look for files like id_rsa and id_rsa.pub. If they exist, you have an SSH key.
+Generate a New SSH Key (If None Exist)
+If you don’t have an SSH key or you want to generate a new one, use the following command:
+sh
+CopyEdit
+ssh-keygen -t ed25519 -C "your_email@example.com"
+If you’re prompted to overwrite a file, just press Enter to accept the default location.
+(Press enter twice)
+Add SSH Key to SSH Agent
+Run these commands to start the SSH agent and add your new key:
+sh
+CopyEdit
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+View SSH Public Key: To view your SSH public key (before copying it), run:
+sh
+CopyEdit
+cat ~/.ssh/id_ed25519.pub
+
+You will get ssh key in terminal copy it
+Now go to github settings and add new ssh key by giving some title and add this ssh key now the ssh key is set
+________________________________________________________________________________________________________
