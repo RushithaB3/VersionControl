@@ -36,3 +36,18 @@ git log (To see the history of commits done)
 git diff <file> (Shows what has changed in your files before you run git add.)
 
 touch <file> (creates new file with given name)
+
+git push: Sends your local commits to the remote repository.
+
+rm -rf <folder> (is used to forcefully remove a file or directory) 
+
+git clone (used to download (clone) a repository from GitHub to your local machine). 
+
+git clone <repository_url> (This creates a local copy of the repository so you can work on it.
+       In real time it will ask credentials during cloning)
+
+Staging and commiting changes:
+git status : Check the status of the files
+git add .
+git commit -m “message”
+git push
